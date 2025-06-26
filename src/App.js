@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TodoList from './TodoList';
+import './App.css';
 
 
 const App = () => {
@@ -32,7 +33,7 @@ const App = () => {
     };
 
     return (
-     <div style={{ padding: 20 }}>
+     <div className="todo-app">
         <h1>To-Do List</h1>
         <form onSubmit={addTodo}>
           <input

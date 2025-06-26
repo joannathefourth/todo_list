@@ -60,3 +60,30 @@ then:
 
 always add node_modules to .gitignore file
 
+
+if you previeously committed things you shouldnt have, run the following to clean it: 
+    git rm -r --cached node_modules
+    git rm -r --cached .DS_Store
+    git rm -r --cached .env
+
+Then recommit: 
+    git add .gitignore
+    git commit -m "Cleaned up gitignore and removed unncecessary files"
+    git push 
+
+
+Steps to push to remote repositiory
+
+1. To add the remote repositiory
+    git remote add origin https://github.com/joannathefourth/todo_list.git 
+2. To confirm the remote repo was added
+    git remote -v 
+
+3. Push your code 
+    git push -u origin main 
+
+
+How to add and push it to Github:
+    git add README.md 
+    git commit -m "Add README file"
+    git push 

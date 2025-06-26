@@ -1,4 +1,5 @@
 import React from 'react';
+import './TodoItem.css'; 
 
 
 const TodoItem = ({ todo, onToggle, onDelete }) => (
@@ -12,7 +13,7 @@ const TodoItem = ({ todo, onToggle, onDelete }) => (
          onChange={() => onToggle(todo.id)}
       />
       {todo.text}
-      <button onClick={() => onDelete(todo.id)} style={{ marginLeft: 10 }}>Delete</button>
+      <button onClick={() => onDelete(todo.id)} className='delete-btn'>❌</button>
     </li>
 );
 
