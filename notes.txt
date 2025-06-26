@@ -1,0 +1,58 @@
+Step 1: Define the Minimum Viable Product 
+
+
+Core Features: 
+1. Add a task
+2. Mark a task as complete
+3. Delete a task 
+4. See list of tasks 
+
+Optional advanced Features
+1. Cool backgrounds and Features
+2. Due Dates 
+3. Categories/tags
+4. User Accounts 
+5. Dark mode
+6. Drag and drop sorting
+7. Cloud sync / database
+
+
+Step 2: Choose the Stack
+Frontend: React (Create React App or Vite)
+State Management: React [useState]
+Backend: None for now (we'll keep tasks in memory of localStorage)
+Optional: Firebase or Express/Node.js for backend localStorage
+
+
+Step 3. Kickoff - React App Setup
+
+
+Basic structure
+
+todo-app/
+|---public/
+|   --index.html
+|---src/
+|   |---App.js
+|   |---TodoList.js
+|   |---TodoItem.js
+|    ---index.js
+|---package.json
+
+
+
+to create package.json: 
+    npm init -y
+then reinstall React Dependencies:
+    npm install react react-dom
+    npm install --save-dev react-scripts
+
+add a minimal start script in package.json:
+    "start": "react-scripts start",
+
+
+if something is already runnning on this browser 
+type : 
+    lsof -i :8000
+then: 
+    kill -9 {PID}
